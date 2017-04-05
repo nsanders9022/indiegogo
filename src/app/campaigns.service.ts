@@ -13,4 +13,16 @@ export class CampaignsService {
   getCampaigns() {
     return this.campaigns;
   }
+
+  addCampaign(newCampaign: Campaign) {
+    this.campaigns.push(newCampaign);
+  }
+
+  getCampaignById(campaignId: number){
+    // for (var i = 0; i <= ALBUMS.length - 1; i++) {
+    //   if (ALBUMS[i].id === campaignId) {
+    //     return ALBUMS[i];
+    //   }
+    // }
+  }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { CampaignsService } from '../campaigns.service';
 import { Router } from '@angular/router';
+import { Campaign } from '../campaign.model';
 
 @Component({
   selector: 'app-campaigns',
@@ -20,9 +21,9 @@ export class CampaignsComponent implements OnInit {
 
   }
 
-  // goToDetailPage(clickedCampaign: Campaign) {
-  //   this.router.navigate(['campaigns', clickedCampaign.id]);
-  // };
+  goToDetailPage(clickedCampaign: Campaign) {
+    // this.router.navigate(['campaigns', clickedCampaign.id]);
+  };
 
 
 }

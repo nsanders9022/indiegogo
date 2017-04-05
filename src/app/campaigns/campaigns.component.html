@@ -1,6 +1,6 @@
 <h2>All Campaigns</h2>
 
-<div *ngFor="let campaign of campaigns | async" class="panel panel-default">
+<div *ngFor="let campaign of campaigns | async" (click)="goToDetailPage(campaign)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{campaign.title}}</em> by {{campaign.author}}</h3>
   </div>

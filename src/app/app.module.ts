@@ -9,6 +9,8 @@ import { routing } from './app.routing';
 
 import { masterFirebaseConfig } from './api-keys'
 import { AngularFireModule } from 'angularfire2';
+import { CampaignComponent } from './campaign/campaign.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -20,7 +22,9 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    CampaignsComponent
+    CampaignsComponent,
+    CampaignComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
