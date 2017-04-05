@@ -21,8 +21,9 @@ export class CampaignsComponent implements OnInit {
 
   }
 
-  goToDetailPage(clickedCampaign: Campaign) {
-    // this.router.navigate(['campaigns', clickedCampaign.id]);
+  //clickedCampaign is not a Campaign datatype because it comes from firebase and it is a FirebaseObjectObservable
+  goToDetailPage(clickedCampaign) {
+    this.router.navigate(['campaigns', clickedCampaign.$key]);
   };
 
 

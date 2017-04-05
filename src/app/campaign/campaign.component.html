@@ -1,4 +1,4 @@
-<h2>This campaign has id number: {{campaignId}}</h2>
+<h2>{{(campaignToDisplay | async)?.title}}</h2>
 <p>
-  {{campaign.title}}
+  {{(campaignToDisplay | async)?.description}}
 </p>
