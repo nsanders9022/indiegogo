@@ -15,7 +15,7 @@
     <h3 (click)="goToDetailPage(campaign)"><em>{{campaign.title}}</em> by {{campaign.author}}</h3>
     <h3>{{campaign.$key}}</h3>
     <img src={{campaign.image}} alt="" />
-    <p>{{campaign.currentamount}}</p>
+    <p>{{campaign.currentAmount}}</p>
     <div *ngIf="currentRoute === '/admin'">
       <p>{{campaign.description}}</p>
       <hr>

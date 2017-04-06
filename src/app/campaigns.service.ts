@@ -37,4 +37,11 @@ export class CampaignsService {
     campaignEntryInFirebase.remove();
   }
 
+  donate(localDonatedCampaign, localAmount: string) {
+    let localAmountInt = parseInt(localAmount);
+    let localDonatedCampaignInt = parseInt(localDonatedCampaign.currentAmount);
+    var campaignEntryInFirebase = this.getCampaignById(localDonatedCampaign.$key);
+    campaignEntryInFirebase.update({currentAmount: localDonatedCampaignInt + localAmountInt});
+  }
+
 }

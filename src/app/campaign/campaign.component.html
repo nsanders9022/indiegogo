@@ -1,7 +1,19 @@
 <h2>{{(campaignToDisplay | async)?.title}}</h2>
+<h3>{{(campaignToDisplay | async)?.author}}</h3>
 <p>
   {{(campaignToDisplay | async)?.description}}
 </p>
 <p>
   {{(campaignToDisplay | async)?.reward}}
 </p>
+
+<div class="row">
+  <div class="col-xs-6">
+    <p>Current Amount: ${{(campaignToDisplay | async)?.currentAmount}}</p>
+  </div>
+  <div class="col-xs-6">
+    <p>Goal Amount: ${{(campaignToDisplay | async)?.goal}}</p>
+  </div>
+</div>
+
+<app-donate [selectedCampaign]='(campaignToDisplay|async)'></app-donate>

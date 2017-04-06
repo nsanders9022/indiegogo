@@ -5,7 +5,7 @@
     "reward": "Free personal translator",
     "goal": 80000,
     "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
-    "currentamount": 371065
+    "currentAmount": 371065
     }, {
     "title": "STUDLACE: Style and Comfort On All Your Shoes",
     "author": "James Noh",
@@ -13,7 +13,7 @@
     "reward": "year long supply of laces",
     "goal": 10000,
     "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
-    "currentamount": 0
+    "currentAmount": 0
       }, {
     "title": "A Step Without Feet, a documentary film.",
     "author": "Jeremy Glaholt",
@@ -21,6 +21,6 @@
     "reward": "become an investor in our film",
     "goal": 8000,
     "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
-    "currentamount": 0
+    "currentAmount": 0
   }]
 }

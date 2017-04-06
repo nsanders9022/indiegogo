@@ -25,5 +25,4 @@ export class CampaignComponent implements OnInit {
     });
     this.campaignToDisplay = this.campaignsService.getCampaignById(this.campaignId);
   }
-
 }

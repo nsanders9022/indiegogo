@@ -17,9 +17,8 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(title: string, author: string, description: string, reward: string, goal: number, image: string) {
-
     var newCampaign: Campaign = new Campaign(title, author, description, reward, goal, image);
     this.campaignsService.addCampaign(newCampaign);
-    }
+  }
 
 }
