@@ -1,6 +1,16 @@
 <h2>All Campaigns</h2>
 
-<div *ngFor="let campaign of campaigns | async" class="panel panel-default">
+<div class="filter-form" *ngIf="currentRoute !== '/admin'">
+  <select (change)="onChange($event.target.value)">
+    <option value="allCampaigns" selected="selected">All Campaigns</option>
+    <option value="more10000">More than $10,000 goal</option>
+    <option value="less10000">Goal of $10,000 or less</option>
+  </select>
+</div>
+
+<!-- objects being passed through pipe are an array of firebase objects. the pipe knows that "campaigns" is the input to its transform function -->
+<!-- async has to go before our built pipe in order to force the filtering to wait until objects are loaded from firebase -->
+<div *ngFor="let campaign of campaigns | async | goalAmount:filterByGoalAmount" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(campaign)"><em>{{campaign.title}}</em> by {{campaign.author}}</h3>
     <h3>{{campaign.$key}}</h3>

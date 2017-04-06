@@ -14,13 +14,16 @@ export class CampaignsComponent implements OnInit {
 
   campaigns: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByGoalAmount: string = "allCampaigns";
 
   constructor(private router: Router, private campaignsService: CampaignsService) { }
 
   ngOnInit() {
     this.campaigns = this.campaignsService.getCampaigns();
+  }
 
-
+  onChange(optionFromMenu) {
+    this.filterByGoalAmount = optionFromMenu;
   }
 
   //clickedCampaign is not a Campaign datatype because it comes from firebase and it is a FirebaseObjectObservable

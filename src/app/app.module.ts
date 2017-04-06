@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { CampaignComponent } from './campaign/campaign.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditCampaignComponent } from './edit-campaign/edit-campaign.component';
+import { GoalAmountPipe } from './goal-amount.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     CampaignsComponent,
     CampaignComponent,
     AdminComponent,
-    EditCampaignComponent
+    EditCampaignComponent,
+    GoalAmountPipe
   ],
   imports: [
     BrowserModule,
