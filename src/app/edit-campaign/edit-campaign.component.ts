@@ -20,4 +20,10 @@ export class EditCampaignComponent implements OnInit {
     this.campaignsService.updateCampaign(campaignToUpdate);
   }
 
+  beginDeletingCampaign(campaignToDelete) {
+    if(confirm("Are you sure you want to delete this item from the inventory?")) {
+      this.campaignsService.deleteCampaign(campaignToDelete);
+    }
+  }
+
 }

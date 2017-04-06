@@ -31,5 +31,10 @@ export class CampaignsService {
                                     goal: localUpdatedCampaign.goal,
                                     image: localUpdatedCampaign.image});
   }
-  
+
+  deleteCampaign(localCampaignToDelete) {
+    var campaignEntryInFirebase = this.getCampaignById(localCampaignToDelete.$key);
+    campaignEntryInFirebase.remove();
+  }
+
 }
