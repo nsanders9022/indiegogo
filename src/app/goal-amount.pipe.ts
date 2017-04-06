@@ -3,7 +3,7 @@ import { Campaign } from './campaign.model';
 
 @Pipe({
   name: 'goalAmount',
-  pure: false
+  pure: true
 })
 
 export class GoalAmountPipe implements PipeTransform {
@@ -26,7 +26,7 @@ export class GoalAmountPipe implements PipeTransform {
       }
       return output;
     } else {
-      return input; 
+      return input;
     }
   }
 
