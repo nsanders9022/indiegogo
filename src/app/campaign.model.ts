@@ -1,4 +1,4 @@
 export class Campaign {
-
-  constructor(public title: string, public author: string, public description: string, public goal: number, public currentamount: number, public image: string) { }
+  public currentamount: number = 0;
+  constructor(public title: string, public author: string, public description: string, public reward: string, public goal: number, public image: string) { }
 }

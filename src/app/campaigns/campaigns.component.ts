@@ -13,11 +13,13 @@ import { Campaign } from '../campaign.model';
 export class CampaignsComponent implements OnInit {
 
   campaigns: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private campaignsService: CampaignsService) { }
 
   ngOnInit() {
     this.campaigns = this.campaignsService.getCampaigns();
+
 
   }
 

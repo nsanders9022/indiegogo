@@ -19,15 +19,15 @@
   </div>
 
   <div>
-    <label>Goal:</label>
+    <label>Reward:</label>
     <br>
-    <input #newGoal>
+    <input #newReward>
   </div>
 
   <div>
-    <label>Current Amount:</label>
+    <label>Goal:</label>
     <br>
-    <input #newCurrentamount>
+    <input #newGoal>
   </div>
 
   <div>
@@ -36,6 +36,9 @@
     <input #newImage>
   </div>
 
-  <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newGoal.value, newCurrentamount.value, newImage.value)">Add</button>
+  <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newReward.value, newGoal.value, newImage.value)">Add</button>
 
 </div>
+
+
+<app-campaigns></app-campaigns>
