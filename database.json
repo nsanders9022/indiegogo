@@ -4,6 +4,7 @@
     "description": "The personal voice translator that lets you instantly communicate in over 80 languages.",
     "goal": 80000,
     "currentamount": 371065,
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
     "id": "1"
     }, {
     "title": "STUDLACE: Style and Comfort On All Your Shoes",
@@ -11,6 +12,7 @@
     "description": "Personalize your shoes with premium elastic laces & quality alloy studs in a variety of designs.",
     "goal": 10000,
     "currentamount": 15807,
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
     "id": "2"
       }, {
     "title": "A Step Without Feet, a documentary film.",
@@ -18,6 +20,7 @@
     "description": "This is not another refugee film. It's a documentary about the vibrant Syrian culture in Berlin.",
     "goal": 8000,
     "currentamount": 3195,
+    "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg",
     "id": "3"
   }]
 }

@@ -16,9 +16,9 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(title: string, author: string, description: string, goal: number, currentamount: number) {
+  submitForm(title: string, author: string, description: string, goal: number, currentamount: number, image: string) {
 
-    var newCampaign: Campaign = new Campaign(title, author, description, goal, currentamount);
+    var newCampaign: Campaign = new Campaign(title, author, description, goal, currentamount, image);
     this.campaignsService.addCampaign(newCampaign);
     }
 

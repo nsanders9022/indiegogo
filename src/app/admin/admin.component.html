@@ -29,6 +29,13 @@
     <br>
     <input #newCurrentamount>
   </div>
-  <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newGoal.value, newCurrentamount.value)">Add</button>
+
+  <div>
+    <label>Image Link:</label>
+    <br>
+    <input #newImage>
+  </div>
+
+  <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newGoal.value, newCurrentamount.value, newImage.value)">Add</button>
 
 </div>
