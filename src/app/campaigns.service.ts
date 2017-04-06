@@ -21,4 +21,15 @@ export class CampaignsService {
   getCampaignById(campaignId: string){
     return this.angularFire.database.object('campaigns/' + campaignId);
   }
+
+  updateCampaign(localUpdatedCampaign) {
+    var campaignEntryInFirebase = this.getCampaignById(localUpdatedCampaign.$key);
+    campaignEntryInFirebase.update({title: localUpdatedCampaign.title,
+                                    author: localUpdatedCampaign.author,
+                                    description: localUpdatedCampaign.description,
+                                    reward: localUpdatedCampaign.reward,
+                                    goal: localUpdatedCampaign.goal,
+                                    image: localUpdatedCampaign.image});
+  }
+  
 }

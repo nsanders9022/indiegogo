@@ -1,3 +1,39 @@
-<p>
-  edit-campaign works!
-</p>
+<h3>Edit Campaign</h3>
+<div>
+  <div>
+    <label>Title:</label>
+    <br>
+    <input [(ngModel)]="selectedCampaign.title">
+  </div>
+
+  <div>
+    <label>Author:</label>
+    <br>
+    <input [(ngModel)]="selectedCampaign.author">
+  </div>
+
+  <div>
+    <label>Description:</label>
+    <br>
+    <textarea [(ngModel)]="selectedCampaign.description"></textarea>
+  </div>
+
+  <div>
+    <label>Reward:</label>
+    <br>
+    <input [(ngModel)]="selectedCampaign.reward">
+  </div>
+
+  <div>
+    <label>Goal:</label>
+    <br>
+    <input [(ngModel)]="selectedCampaign.goal">
+  </div>
+
+  <div>
+    <label>Image Link:</label>
+    <br>
+    <input [(ngModel)]="selectedCampaign.image">
+  </div>
+
+  <button (click)="beginUpdatingCampaign(selectedCampaign)">Update</button>
